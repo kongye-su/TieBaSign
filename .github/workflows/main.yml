@@ -20,5 +20,5 @@ jobs:
         run: python -m pip install --upgrade requests lxml cssselect
       - name: 'Start Sign'
         env:
-          BDUSS: ${{ secrets.BDUSS }}
+          COOKIE: ${{ secrets.COOKIE }}
         run: python main.py
